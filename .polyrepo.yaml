@@ -1,0 +1,13 @@
+default: dott
+workspaces:
+  - name: dev
+    path: ~/workspace/dott
+    repositories:
+      - name: lib
+        url: git@github.com:dottsh/lib.git
+        branch: main
+        path: workspace
+      - name: cli
+        url: git@github.com:dottsh/cli.git
+        branch: main
+        path: pkg/cli
